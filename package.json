@@ -2,10 +2,6 @@
   "name": "react-firebase-todos",
   "version": "0.1.0",
   "private": true,
-  "engines": {
-    "npm": "8.3.0",
-    "node": "14.17.3"
-  },
   "dependencies": {
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
