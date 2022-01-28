@@ -8,8 +8,8 @@ import { Button } from '@mui/material';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 // import LocationOnIcon from '@mui/icons-material/LocationOn';
 
-import { firestoreDb, storageDb } from '../../Services/Firebase';
-import { addDoc, collection } from 'firebase/firestore';
+import { storageDb } from '../../Services/Firebase';
+// import { addDoc, collection } from 'firebase/firestore';
 import { ref, uploadBytesResumable } from "firebase/storage";
 
 
@@ -29,7 +29,7 @@ const UploadImageFile = () => {
     const storageDbRef = ref(storageDb, `files/${file.name}`);
     const uploadTask = uploadBytesResumable(storageDbRef, file);
     // console.log(data);
-    alert('Upload is Successfull');
+    alert(uploadTask, 'Upload is Successfull');
   };
 
   const handleChangeProfile = (event) => {

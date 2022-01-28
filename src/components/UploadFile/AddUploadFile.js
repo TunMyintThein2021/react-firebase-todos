@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { makeStyles } from '@mui/styles';
 import { styled } from '@mui/material/styles';
-import { Container, Typography, Box, Stack, Avatar } from '@mui/material';
-import { FormControl, Select, Button, IconButton, TextField } from '@mui/material';
+import { Container, Typography, Box, Stack, Avatar, Button } from '@mui/material';
+// import { FormControl, Select, IconButton, TextField } from '@mui/material';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 // import LocationOnIcon from '@mui/icons-material/LocationOn';
 
@@ -20,7 +20,7 @@ const AddUploadFile = () => {
       const file = e.target[0].files[0];
       const storageDbRef = ref(storageDb, `files/${file.name}`);
       const uploadTask = uploadBytesResumable(storageDbRef, file);
-      alert('Upload is Successfull');
+      alert(uploadTask, 'Upload is Successfull');
     } else {
       alert('Upload is not Successfull');
     }
