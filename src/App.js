@@ -7,6 +7,7 @@ import RegisterForm from "./components/AuthForms/RegisterForm";
 import AddUserForm from "./components/Forms/AddUserForm";
 import EmployeeCreate from "./components/Pages/EmployeeCreate";
 import DragDrop from "./components/DragDrop/DragDrop";
+import CustomDrag from "./components/DragDrop/CustomDrag";
 import UploadImageFile from "./components/UploadFile/UploadImageFile";
 import AddUploadFile from "./components/UploadFile/AddUploadFile";
 
@@ -26,6 +27,7 @@ function App() {
           <Route path="/employee" element={<EmployeeCreate />} />
           <Route path="/uploadfile" element={<UploadImageFile />} />
           <Route path="/drag" element={<DragDrop />} />
+          <Route path="/customdrag" element={<CustomDrag />} />
           <Route path="/adduploadfile" element={<AddUploadFile />} />
         </Routes>
       </BrowserRouter>

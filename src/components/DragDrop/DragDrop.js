@@ -125,6 +125,7 @@ const DragDrop = () => {
                   <Droppable key={columnId} droppableId={columnId}>
                     {(provided, snapshot) => (
                       <Box component={Paper} elevation={3}
+                        key={index}
                         snapshot={snapshot}
                         ref={provided.innerRef}
                         {...provided.droppableProps}
@@ -208,7 +209,6 @@ const theme = createTheme({
                   background: '#FFF',
                   ".MuiListItemText-root": {
                     margin: '0',
-                    // color: '#333',
                     color: '#45597E',
                     "&:first-of-type": {
                       marginBottom: '15px',
