@@ -10,6 +10,7 @@ import DragDrop from "./components/DragDrop/DragDrop";
 import CustomDrag from "./components/DragDrop/CustomDrag";
 import UploadImageFile from "./components/UploadFile/UploadImageFile";
 import AddUploadFile from "./components/UploadFile/AddUploadFile";
+import NotFound from "./components/NotFound/NotFound";
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
           <Route path="/drag" element={<DragDrop />} />
           <Route path="/customdrag" element={<CustomDrag />} />
           <Route path="/adduploadfile" element={<AddUploadFile />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     </React.Fragment>
